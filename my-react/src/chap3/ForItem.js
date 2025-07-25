@@ -1,3 +1,5 @@
+import Download from "./Download";
+
 export default function ForItem({ book }) {
     return (
         <>
@@ -6,7 +8,10 @@ export default function ForItem({ book }) {
                     {book.title} ({book.price}円)
                 </a>
             </dt>
-            <dd>{book.summary}</dd>
+            <dd>
+                {book.summary}
+                {book.download && <Download isbn={book.isbn} />}
+            </dd>
         </>
     )
 }

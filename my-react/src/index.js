@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import books from './chap3/books';
-import ForSort from './chap3/ForSort';
+import ForNest from './chap3/ForNest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ForSort src={books} />
+    <ForNest src={books} />
   </React.StrictMode>
 );
 
