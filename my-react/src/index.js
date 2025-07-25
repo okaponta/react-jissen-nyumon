@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import books from './chap3/books';
-import ForNest from './chap3/ForNest';
+import SelectStyle from './chap3/SelectStyle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ForNest src={books} />
+    <SelectStyle mode="light" />
   </React.StrictMode>
 );
 
