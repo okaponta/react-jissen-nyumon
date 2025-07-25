@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StateBasic from './chap3/StateBasic';
+import books from './chap3/books';
+import ForSort from './chap3/ForSort';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateBasic init={0} />
+    <ForSort src={books} />
   </React.StrictMode>
 );
 
