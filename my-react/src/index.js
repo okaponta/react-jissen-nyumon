@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SelectStyle from './chap3/SelectStyle';
+import StyledPanel from './chap3/StyledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SelectStyle mode="light" />
+    <StyledPanel>
+      <p>メンバー募集中</p>
+      <p>React</p>
+    </StyledPanel>
   </React.StrictMode>
 );
 
