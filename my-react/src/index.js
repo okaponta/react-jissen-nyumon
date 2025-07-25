@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MyHello from './chap3/MyHello';
+import EventBasic from './chap3/EventBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyHello name="鈴木" />
+    <EventBasic type="time" />
   </React.StrictMode>
 );
 
