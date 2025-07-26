@@ -2,24 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ListTemplate from './chap3/ListTemplate';
-import books from './chap3/books';
+import StateBasic from './chap3/StateBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ListTemplate src={books}>
-      {elem =>
-        <>
-          <dt>
-            <a href={`https:://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
-              {elem.title} ({elem.price}円)
-            </a>
-          </dt>
-          <dd>{elem.summary}</dd>
-        </>
-      }
-    </ListTemplate>
+    <StateBasic init={0} />
   </React.StrictMode>
 );
 
