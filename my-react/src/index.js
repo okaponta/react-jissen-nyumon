@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StyledPanel from './chap3/StyledPanel';
+import TitledPanel from './chap3/TitledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StyledPanel>
-      <p>メンバー募集中</p>
-      <p>React</p>
-    </StyledPanel>
+    <TitledPanel>
+      <p key="title">メンバー募集中</p>
+      <p key="body">React</p>
+    </TitledPanel>
   </React.StrictMode>
 );
 
