@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import EventPropagation from './chap3/EventPropagation';
+import EventPassive from './chap3/EventPassive';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EventPropagation />
+    <EventPassive />
   </React.StrictMode>
 );
 
