@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import EventArgs from './chap3/EventArgs';
+import EventPropagation from './chap3/EventPropagation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EventArgs />
+    <EventPropagation />
   </React.StrictMode>
 );
 
