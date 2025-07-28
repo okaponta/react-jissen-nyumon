@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import EventPassive from './chap3/EventPassive';
+import StateForm from './chap4/StateForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EventPassive />
+    <StateForm />
   </React.StrictMode>
 );
 
