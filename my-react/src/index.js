@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import LazyBasic from './chap5/LazyBasic';
+import SuspenseResult from './chap5/SuspenseResult';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LazyBasic />
+    <SuspenseResult />
   </React.StrictMode>
 );
 
