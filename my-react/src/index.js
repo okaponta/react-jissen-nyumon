@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SuspenseResult from './chap5/SuspenseResult';
+import ProfilerBasic from './chap5/ProfilerBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SuspenseResult />
+    <ProfilerBasic />
   </React.StrictMode>
 );
 
