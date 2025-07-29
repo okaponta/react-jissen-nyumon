@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import FormBasic from './chap4/FormBasic';
+import LazyBasic from './chap5/LazyBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormBasic />
+    <LazyBasic />
   </React.StrictMode>
 );
 
