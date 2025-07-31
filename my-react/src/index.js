@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import PortalBasic from './chap5/PortalBasic';
+import ErrorEventRoot from './chap5/ErrorEventRoot';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div id="Dialog"></div>
-    <PortalBasic />
+    <ErrorEventRoot />
   </React.StrictMode>
 );
 
