@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StyledProps from './chap5/StyledProps';
+import EmotionComp from './chap5/EmotionComp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <h3>Styled JSXの基本</h3>
-    <StyledProps />
+    <EmotionComp />
   </React.StrictMode>
 );
 
