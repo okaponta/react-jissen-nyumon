@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import EmotionComp from './chap5/EmotionComp';
+import PortalBasic from './chap5/PortalBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <h3>Styled JSXの基本</h3>
-    <EmotionComp />
+    <div id="Dialog"></div>
+    <PortalBasic />
   </React.StrictMode>
 );
 
