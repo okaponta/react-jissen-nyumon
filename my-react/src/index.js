@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import HookTimer from "./chap7/HookTimer";
+import HookEffect from "./chap7/HookEffect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HookTimer init={10} />
+    <HookEffect init={10} />
   </React.StrictMode>
 );
 
