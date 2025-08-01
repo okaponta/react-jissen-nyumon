@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import HookRefForward from "./chap7/HookRefForward";
+import HookCallbackRef from "./chap7/HookCallbackRef";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HookRefForward />
+    <HookCallbackRef />
   </React.StrictMode>
 );
 
