@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import HookReducer from "./chap7/HookReducer";
+import HookContext from "./chap7/HookContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HookReducer init={0} />
+    <HookContext />
   </React.StrictMode>
 );
 
