@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MaterialBasic from './chap6/MaterialBasic';
+import MaterialDrawer from './chap6/MaterialDrawer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MaterialBasic />
+    <MaterialDrawer />
   </React.StrictMode>
 );
 
