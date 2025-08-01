@@ -1,4 +1,3 @@
-import { memo } from "react";
 import books from "./books";
 
 const sleep = (delay) => {
@@ -19,7 +18,18 @@ export function BookDetails({ isbn }) {
   );
 }
 
-export const CommentList = memo(function ({ src, isPending }) {
+// export const CommentList = memo(function ({ src, isPending }) {
+//   if (isPending) return <p>Now Loading...</p>;
+//   return (
+//     <ol>
+//       {src.map((c) => (
+//         <CommentItem key={c.id} src={c} />
+//       ))}
+//     </ol>
+//   );
+// });
+
+export const CommentList = ({ src, isPending }) => {
   if (isPending) return <p>Now Loading...</p>;
   return (
     <ol>
@@ -28,7 +38,7 @@ export const CommentList = memo(function ({ src, isPending }) {
       ))}
     </ol>
   );
-});
+};
 
 function CommentItem({ src }) {
   sleep(1000);

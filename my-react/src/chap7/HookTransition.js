@@ -11,11 +11,10 @@ export default function HookTransition() {
   const handleChange = (e) => {
     const isbn = e.target.value;
     setIsbn(isbn);
-    setComments(commentList.filter((c) => c.isbn === isbn));
 
-    // startTransition(() => {
-    //   setComments(commentList.filter(c => c.isbn === isbn));
-    // });
+    startTransition(() => {
+      setComments(commentList.filter((c) => c.isbn === isbn));
+    });
   };
 
   return (
@@ -32,7 +31,7 @@ export default function HookTransition() {
       <hr />
       <CommentList
         src={comments}
-        // isPending={isPending}
+        isPending={isPending}
       />
     </>
   );
