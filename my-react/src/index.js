@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import MaterialDrawer from "./chap6/MaterialDrawer";
+import StateEffect from "./chap7/StateEffect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <MaterialDrawer />
+    <StateEffect init={0} />
   </React.StrictMode>
 );
 
