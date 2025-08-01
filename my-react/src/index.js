@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RecoilRoot } from "recoil";
-import RecoilCounter from "./chap7/RecoilCounter";
+import RecoilTodo from "./chap7/RecoilTodo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RecoilRoot>
-    <RecoilCounter />
+    <RecoilTodo />
   </RecoilRoot>
 );
 
