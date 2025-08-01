@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RecoilRoot } from "recoil";
-import RecoilTodoUp from "./chap7/RecoilTodoUp";
+import HookMemo from "./chap7/HookMemo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RecoilRoot>
-    <RecoilTodoUp />
+    <HookMemo />
   </RecoilRoot>
 );
 
