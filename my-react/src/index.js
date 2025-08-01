@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import HookEffect from "./chap7/HookEffect";
+import HookRef from "./chap7/HookRef";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HookEffect init={10} />
+    <HookRef />
   </React.StrictMode>
 );
 
