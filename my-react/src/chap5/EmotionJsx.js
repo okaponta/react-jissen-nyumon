@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 export default function EmotionJsx() {
   const styles = css`
@@ -9,9 +9,11 @@ export default function EmotionJsx() {
     border-radius: 5px;
     background-color: #f9f9f9;
     color: #333;
-  `
+  `;
 
   return (
-    <div css={styles}><b>Styled JSX</b>はJSX式にスタイル定義</div>
-  )
+    <div css={styles}>
+      <b>Styled JSX</b>はJSX式にスタイル定義
+    </div>
+  );
 }

@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const MyPanel = styled.div`
   width: 300px;
@@ -8,10 +8,12 @@ const MyPanel = styled.div`
   border-radius: 5px;
   background-color: #f9f9f9;
   color: #333;
-`
+`;
 
 export default function EmotionComp() {
   return (
-    <MyPanel><b>Styled JSX</b>はJSX式にスタイル定義</MyPanel>
-  )
+    <MyPanel>
+      <b>Styled JSX</b>はJSX式にスタイル定義
+    </MyPanel>
+  );
 }

@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
-import { Button } from '@mui/material';
+import { css } from "@emotion/react";
+import { Button } from "@mui/material";
 
 export default function MaterialBasic() {
   const font = css`
-      text-transform: none;
+    text-transform: none;
   `;
   return (
     <>
@@ -16,9 +16,15 @@ export default function MaterialBasic() {
       <Button variant="contained" color="secondary">Contained</Button>
       <Button variant="outlined" color="secondary">Outlined</Button> */}
 
-      <Button variant="text" css={font}>Text</Button>
-      <Button variant="contained" css={font}>Contained</Button>
-      <Button variant="outlined" css={font}>Outlined</Button>
+      <Button variant="text" css={font}>
+        Text
+      </Button>
+      <Button variant="contained" css={font}>
+        Contained
+      </Button>
+      <Button variant="outlined" css={font}>
+        Outlined
+      </Button>
     </>
   );
 }

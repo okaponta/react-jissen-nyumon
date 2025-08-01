@@ -1,4 +1,4 @@
-import { useErrorBoundary } from 'react-error-boundary';
+import { useErrorBoundary } from "react-error-boundary";
 
 export default function ErrorEvent() {
   const { showBoundary } = useErrorBoundary();
@@ -6,7 +6,7 @@ export default function ErrorEvent() {
     // throw new Error('Error is occured in MyApp.');
 
     try {
-      throw new Error('Error is occured in MyApp.');
+      throw new Error("Error is occured in MyApp.");
     } catch (e) {
       showBoundary(e);
     }

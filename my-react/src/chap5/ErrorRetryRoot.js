@@ -1,9 +1,9 @@
-import { ErrorBoundary } from 'react-error-boundary';
-import ErrorRetryThrow from './ErrorRetryThrow';
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorRetryThrow from "./ErrorRetryThrow";
 
 export default function ErrorRetryRoot() {
   const handleFallback = ({ error, resetErrorBoundary }) => {
-    const handleClick = () => resetErrorBoundary()
+    const handleClick = () => resetErrorBoundary();
     return (
       <div>
         <h4>以下のエラーが発生しました</h4>
@@ -12,11 +12,11 @@ export default function ErrorRetryRoot() {
           Retry
         </button>
       </div>
-    )
-  }
+    );
+  };
   const handleReset = () => {
-    console.log('リセットされました');
-  }
+    console.log("リセットされました");
+  };
 
   return (
     <>
@@ -25,5 +25,5 @@ export default function ErrorRetryRoot() {
         <ErrorRetryThrow />
       </ErrorBoundary>
     </>
-  )
+  );
 }

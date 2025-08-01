@@ -1,5 +1,5 @@
-import { ErrorBoundary } from 'react-error-boundary';
-import ErrorEvent from './ErrorEvent';
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorEvent from "./ErrorEvent";
 
 export default function ErrorEventRoot() {
   const handleFallback = ({ error, resetErrorBoundary }) => {
@@ -14,14 +14,12 @@ export default function ErrorEventRoot() {
       </div>
     );
   };
-  const handleReset = () => console.log('Retry!!');
+  const handleReset = () => console.log("Retry!!");
 
   return (
     <>
       <h3>Error Boundaryの基本</h3>
-      <ErrorBoundary
-        onReset={handleReset}
-        fallbackRender={handleFallback}>
+      <ErrorBoundary onReset={handleReset} fallbackRender={handleFallback}>
         <ErrorEvent />
       </ErrorBoundary>
     </>
