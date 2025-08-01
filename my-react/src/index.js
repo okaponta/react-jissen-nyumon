@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import HookContext from "./chap7/HookContext";
+import HookThemeButton from "./chap7/HookThemeButton";
+import MyThemeProvider from "./chap7/MyThemeProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HookContext />
+    <MyThemeProvider>
+      <HookThemeButton />
+    </MyThemeProvider>
   </React.StrictMode>
 );
 
