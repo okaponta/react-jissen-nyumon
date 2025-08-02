@@ -1,12 +1,13 @@
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RecoilRoot } from "recoil";
-import HookCustom from "./chap7/HookCustom";
+import { RouterProvider } from "react-router-dom";
+import routesBasic from "./chap8/routesBasic";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RecoilRoot>
-    <HookCustom />
+    <RouterProvider router={routesBasic} />
   </RecoilRoot>
 );
 
