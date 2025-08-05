@@ -2,12 +2,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RecoilRoot } from "recoil";
 import { RouterProvider } from "react-router-dom";
-import routesBasic from "./chap8/routesBasic";
+import routesLink from "./chap8/routesLink";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RecoilRoot>
-    <RouterProvider router={routesBasic} />
+    <RouterProvider router={routesLink} />
   </RecoilRoot>
 );
 
