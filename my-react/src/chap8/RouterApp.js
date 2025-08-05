@@ -1,17 +1,18 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import "./RouterNav.css";
 
 export default function RouterApp() {
   return (
     <>
       <ul>
         <li>
-          <Link to="/">トップ</Link>
+          <NavLink to="/">トップ</NavLink>
         </li>
         <li>
-          <Link to="/article">公開記事</Link>
+          <NavLink to="/article">公開記事</NavLink>
         </li>
         <li>
-          <Link to="/about">このサイトについて</Link>
+          <NavLink to="/about">このサイトについて</NavLink>
         </li>
       </ul>
       <hr />
