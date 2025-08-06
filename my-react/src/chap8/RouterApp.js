@@ -14,6 +14,9 @@ export default function RouterApp() {
         <li>
           <NavLink to="/about">このサイトについて</NavLink>
         </li>
+        <li>
+          <NavLink to="/article/info">Infoページ</NavLink>
+        </li>
       </ul>
       <hr />
       <Outlet />

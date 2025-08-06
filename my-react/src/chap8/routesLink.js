@@ -7,6 +7,7 @@ import RouterApp from "./RouterApp";
 import TopPage from "./TopPage";
 import ArticlePage from "./ArticlePage";
 import AboutPage from "./AboutPage";
+import InfoPage from "./InfoPage";
 
 const routesLink = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +15,7 @@ const routesLink = createBrowserRouter(
       <Route path="" element={<TopPage />} />
       <Route path="article" element={<ArticlePage />} />
       <Route path="about" element={<AboutPage />} />
+      <Route path="article/info" element={<InfoPage />} />
     </Route>
   )
 );
