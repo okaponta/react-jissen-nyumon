@@ -3,9 +3,9 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import TopPage from "./TopPage";
-import ArticlePage from "./ArticlePage";
-import AboutPage from "./AboutPage";
+import TopPage from "./TopPage.jsx";
+import ArticlePage from "./ArticlePage.jsx";
+import AboutPage from "./AboutPage.jsx";
 
 const routesBasic = createBrowserRouter(
   createRoutesFromElements(

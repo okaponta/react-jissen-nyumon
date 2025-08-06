@@ -1,5 +1,5 @@
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorThrow from "./ErrorThrow";
+import ErrorThrow from "./ErrorThrow.jsx";
 
 export default function ErrorRoot() {
   return (

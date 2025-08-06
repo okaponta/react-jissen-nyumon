@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { HookContextChild } from "./HookContextChild";
+import { HookContextChild } from "./HookContextChild.jsx";
 
 export const MyAppContext = createContext();
 const config = {

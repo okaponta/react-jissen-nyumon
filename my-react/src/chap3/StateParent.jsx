@@ -1,5 +1,5 @@
 import { useState } from "react";
-import StateCounter from "./StateCounter";
+import StateCounter from "./StateCounter.jsx";
 
 export default function StateParent() {
   const [count, setCount] = useState(0);

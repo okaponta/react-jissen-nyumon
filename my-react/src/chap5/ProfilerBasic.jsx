@@ -1,5 +1,5 @@
 import { Profiler } from "react";
-import HeavyUI from "./HeavyUI";
+import HeavyUI from "./HeavyUI.jsx";
 
 export default function ProfilerBasic() {
   const handleMeasure = (

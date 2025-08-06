@@ -3,11 +3,11 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import RouterApp from "./RouterApp";
-import TopPage from "./TopPage";
-import ArticlePage from "./ArticlePage";
-import AboutPage from "./AboutPage";
-import InfoPage from "./InfoPage";
+import RouterApp from "./RouterApp.jsx";
+import TopPage from "./TopPage.jsx";
+import ArticlePage from "./ArticlePage.jsx";
+import AboutPage from "./AboutPage.jsx";
+import InfoPage from "./InfoPage.jsx";
 
 const routesLink = createBrowserRouter(
   createRoutesFromElements(

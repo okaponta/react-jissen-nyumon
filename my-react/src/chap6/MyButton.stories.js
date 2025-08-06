@@ -1,7 +1,7 @@
 import { action } from "@storybook/addon-actions";
 import { userEvent, within } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
-import MyButton from "./MyButton";
+import MyButton from "./MyButton.jsx";
 
 export default {
   title: "MyApp/MyButton",

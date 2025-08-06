@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import StateBasic from "../chap3/StateBasic";
+import StateBasic from "../chap3/StateBasic.jsx";
 
 test("StateBasic Test", async () => {
   const ev = userEvent.setup();

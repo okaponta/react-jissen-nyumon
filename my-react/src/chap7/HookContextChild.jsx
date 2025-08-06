@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MyAppContext } from "./HookContext";
+import { MyAppContext } from "./HookContext.jsx";
 
 export function HookContextChild() {
   return (

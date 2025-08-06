@@ -1,12 +1,12 @@
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorRetryThrow from "./ErrorRetryThrow";
+import ErrorEvent from "./ErrorEvent.jsx";
 
-export default function ErrorRetryRoot() {
+export default function ErrorEventRoot() {
   const handleFallback = ({ error, resetErrorBoundary }) => {
     const handleClick = () => resetErrorBoundary();
     return (
       <div>
-        <h4>以下のエラーが発生しました</h4>
+        <h4>以下のエラーが発生しました。</h4>
         <p>{error.message}</p>
         <button type="button" onClick={handleClick}>
           Retry
@@ -14,15 +14,13 @@ export default function ErrorRetryRoot() {
       </div>
     );
   };
-  const handleReset = () => {
-    console.log("リセットされました");
-  };
+  const handleReset = () => console.log("Retry!!");
 
   return (
     <>
-      <h3>Error Boundary</h3>
+      <h3>Error Boundaryの基本</h3>
       <ErrorBoundary onReset={handleReset} fallbackRender={handleFallback}>
-        <ErrorRetryThrow />
+        <ErrorEvent />
       </ErrorBoundary>
     </>
   );

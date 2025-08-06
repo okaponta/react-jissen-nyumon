@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import MyHeader from './MyHeader';
+import MyHeader from './MyHeader.jsx';
 
 export default function TopPage() {
   // const [, setCount] = useOutletContext();

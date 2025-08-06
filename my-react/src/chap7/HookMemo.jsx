@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import { MyButton, MyCounter } from "./HookMemoChild";
+import { MyButton, MyCounter } from "./HookMemoChild.jsx";
 
 const sleep = (delay) => {
   const start = Date.now();

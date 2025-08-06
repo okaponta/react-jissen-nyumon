@@ -1,10 +1,10 @@
 import { Suspense } from "react";
-import ThrowResult from "./ThrowResult";
+import ThrowPromise from "./ThrowPromise.jsx";
 
-export default function SuspenseResult() {
+export default function SuspenseSimple() {
   return (
     <Suspense fallback={<p>Loading...</p>}>
-      <ThrowResult />
+      <ThrowPromise />
     </Suspense>
   );
 }
