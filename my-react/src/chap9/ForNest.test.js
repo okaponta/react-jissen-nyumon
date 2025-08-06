@@ -16,6 +16,7 @@ jest.mock("../chap3/ForItem", () => {
 test("ForNest Test", () => {
   const { debug, baseElement } = render(<ForNest src={books} />);
   const dt = screen.getAllByRole("term");
+  // eslint-disable-next-line
   debug(baseElement);
   expect(dt).toHaveLength(5);
   expect(dt[0]).toHaveTextContent("Vue.js");
