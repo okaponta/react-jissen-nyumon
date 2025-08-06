@@ -5,7 +5,6 @@ export default function StateBasic({ init }) {
   console.log(`count is ${count}`);
   const handleClick = () => {
     setCount((c) => c + 1);
-    setCount((c) => c + 1);
   };
   return (
     <>
