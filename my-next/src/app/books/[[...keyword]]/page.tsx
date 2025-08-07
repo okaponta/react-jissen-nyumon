@@ -2,15 +2,17 @@ import LinkedBookDetails from '@/components/LinkedBookDetails'
 import { getBooksByKeyword } from '@/lib/getter'
 
 interface BookResultProps {
-  params: {
-    keyword?: string
-  }
+  params: Promise<{
+    keyword?: string[]
+  }>
 }
 
 export default async function BookResult({
-  params: { keyword = 'React' },
+  params,
 }: BookResultProps) {
-  const books = await getBooksByKeyword(keyword)
+  const { keyword = ['React'] } = await params
+  const searchKeyword = keyword.join(' ')
+  const books = await getBooksByKeyword(searchKeyword)
   return (
     <div>
       {books.map((b, i) => (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 type BookDetailsProps = {
-  index: number
+  index?: number
   book: ApiBook | ReviewBook
 }
 
