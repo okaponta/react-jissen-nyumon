@@ -1,9 +1,8 @@
-import { reviews } from '@/generated/prisma'
 import Image from 'next/image'
 
 type BookDetailsProps = {
   index: number
-  book: reviews
+  book: ApiBook | ReviewBook
 }
 
 export default function BookDetails({ index, book }: BookDetailsProps) {
